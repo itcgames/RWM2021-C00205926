@@ -9,14 +9,13 @@ public class BombSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Jump")) 
-            if(bombAlive == false)
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (bombAlive == false)
             {
-                {
-                    Instantiate(bomb, transform.position, Quaternion.identity);
-                    bombAlive = true;
-                }
+                Instantiate(bomb, transform.position, Quaternion.identity);
+                bombAlive = true;
             }
-
+        }
     }
 }
