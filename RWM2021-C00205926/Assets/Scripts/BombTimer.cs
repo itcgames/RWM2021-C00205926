@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class BombTimer : MonoBehaviour
 {
-    float count = 1f;
+    float count = 3f;
+
+    private AudioSource audioSource;
+    public AudioClip bombExplosion;
 
     BombSpawner bombSpawner;
 
+    bool bombSound = false;
+
     void Start()
-    {
-        bombSpawner = GameObject.Find("BombSpawner").GetComponent<BombSpawner>();
+    {     
+        bombSpawner = GameObject.Find("BombSpawner").GetComponent<BombSpawner>();    
+        
+        audioSource = GetComponent<AudioSource>();
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = bombExplosion;
+
+
     }
 
     void Update()
     {
         count -= Time.deltaTime;
+
         if (count <= 0.0f)
         {
-            Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(bombExplosion, transform.position);
+
             bombSpawner.bombAlive = false;
+
+            Destroy(gameObject);
         }
     }
 }
