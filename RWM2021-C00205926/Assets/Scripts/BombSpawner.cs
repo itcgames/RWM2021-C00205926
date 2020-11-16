@@ -5,14 +5,21 @@ using UnityEngine;
 public class BombSpawner : MonoBehaviour
 {
     public GameObject bomb;
-    bool bombAlive = false;
-    // Update is called once per frame
+    private GameObject bombRef;
+    public bool bombAlive;
+
+    void Start()
+    {
+        bombRef = bomb;
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Jump"))
         {
             if (bombAlive == false)
             {
+                Debug.Log(bomb);
                 Instantiate(bomb, transform.position, Quaternion.identity);
                 bombAlive = true;
             }
