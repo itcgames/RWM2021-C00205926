@@ -13,11 +13,7 @@ namespace Tests
         [UnityTest]
         public IEnumerator TestSpawn()
         {
-            GameObject gameGameObject = Resources.Load("bomb") as GameObject;
-           game = gameGameObject.GetComponent<BombSpawner>();
 
-            Input.GetKeyDown("space");
-     
             yield return new WaitForSeconds(0.1f);
 
             

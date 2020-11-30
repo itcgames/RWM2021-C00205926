@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BombTimer : MonoBehaviour
 {
-    float count = 3.0f;
+    float count = 3000.0f;
 
     private AudioSource audioSource;
     public AudioClip bombExplosion;

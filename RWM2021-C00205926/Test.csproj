@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BombKick.cs" />
     <Compile Include="Assets\Scripts\BombSpawner.cs" />
     <Compile Include="Assets\Scripts\BombTimer.cs" />
     <None Include="Assets\Scripts\Script.asmdef" />
