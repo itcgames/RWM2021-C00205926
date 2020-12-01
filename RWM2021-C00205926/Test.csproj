@@ -64,10 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BombKick.cs" />
-    <Compile Include="Assets\Scripts\BombSpawner.cs" />
-    <Compile Include="Assets\Scripts\BombTimer.cs" />
-    <None Include="Assets\Scripts\Script.asmdef" />
+    <Compile Include="Assets\BombComponent\Scripts\BombKick.cs" />
+    <Compile Include="Assets\BombComponent\Scripts\BombSpawner.cs" />
+    <Compile Include="Assets\BombComponent\Scripts\BombTimer.cs" />
+    <None Include="Assets\BombComponent\Scripts\Script.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

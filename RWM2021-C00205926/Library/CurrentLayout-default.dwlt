@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 878, y: 342}
-  m_MaxSize: {x: 16003, y: 8042}
+  m_MinSize: {x: 781, y: 321}
+  m_MaxSize: {x: 16006, y: 8021}
   vertical: 0
-  controlID: 28
+  controlID: 79
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 947
-  m_MinSize: {x: 603, y: 342}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 505, y: 321}
+  m_MaxSize: {x: 12005, y: 8021}
   vertical: 1
-  controlID: 29
+  controlID: 80
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 622
-  m_MinSize: {x: 603, y: 221}
-  m_MaxSize: {x: 12003, y: 4021}
+  m_MinSize: {x: 505, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 30
+  controlID: 81
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -212,14 +212,14 @@ MonoBehaviour:
     y: 0
     width: 425
     height: 622
-  m_MinSize: {x: 202, y: 221}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 16}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,8 +239,8 @@ MonoBehaviour:
     y: 0
     width: 740
     height: 622
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 554
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -320,13 +320,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 247
+    x: 201
     y: 73
-    width: 100
+    width: 423
     height: 601
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 175
+    ID: 860
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: 8e01000085000000
@@ -346,9 +346,9 @@ MonoBehaviour:
       uniqueId: '[RWM2021-C00205926][suite]'
       name: RWM2021-C00205926
       fullName: RWM2021-C00205926
-      resultStatus: 2
-      duration: 0.1342536
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2215057
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -358,13 +358,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
-      uniqueId: '[Tests.dll][suite]'
-      name: Tests.dll
-      fullName: C:/Users/jakec/Desktop/RWM2021-C00205926/RWM2021-C00205926/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 0.0916115
-      messages: One or more child tests had errors
+    - id: 1003
+      uniqueId: '[BombTests][C:/Users/jakec/OneDrive/Desktop/RWM2021-C00205926/RWM2021-C00205926/Library/ScriptAssemblies/BombTests.dll][suite]'
+      name: BombTests.dll
+      fullName: C:/Users/jakec/OneDrive/Desktop/RWM2021-C00205926/RWM2021-C00205926/Library/ScriptAssemblies/BombTests.dll
+      resultStatus: 1
+      duration: 0.1495967
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -374,29 +374,13 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[RWM2021-C00205926][suite]'
-    - id: 1005
-      uniqueId: Tests.dll/[Tests][suite]
-      name: Tests
-      fullName: Tests
-      resultStatus: 2
-      duration: 0.0787776
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1004
-      parentUniqueId: '[Tests.dll][suite]'
     - id: 1001
-      uniqueId: Tests.dll/Tests/[Tests][Tests.TestSuite][suite]
-      name: TestSuite
-      fullName: Tests.TestSuite
-      resultStatus: 2
-      duration: 0.0711523
-      messages: One or more child tests had errors
+      uniqueId: BombTests.dll/[BombTests][BombTestSuite][suite]
+      name: BombTestSuite
+      fullName: BombTestSuite
+      resultStatus: 1
+      duration: 0.1399175
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -404,23 +388,17 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][suite]
+      parentId: 1003
+      parentUniqueId: '[BombTests][C:/Users/jakec/OneDrive/Desktop/RWM2021-C00205926/RWM2021-C00205926/Library/ScriptAssemblies/BombTests.dll][suite]'
     - id: 1002
-      uniqueId: Tests.dll/Tests/TestSuite/[Tests][Tests.TestSuite.TestSpawn]
+      uniqueId: BombTests.dll/BombTestSuite/[BombTests][BombTestSuite.TestSpawn]
       name: TestSpawn
-      fullName: Tests.TestSuite.TestSpawn
-      resultStatus: 2
-      duration: 0.0515157
-      messages: 'System.ArgumentException : The Object you want to instantiate is
-        null.'
+      fullName: BombTestSuite.TestSpawn
+      resultStatus: 1
+      duration: 0.1193642
+      messages: 
       output: 
-      stacktrace: "  at UnityEngine.Object.CheckNullArgument (System.Object arg,
-        System.String message) [0x00009] in <9674024ab0e74d27bbe9eaa30dab34d1>:0
-        \r\n  at UnityEngine.Object.Instantiate[T] (T original) [0x00001] in <9674024ab0e74d27bbe9eaa30dab34d1>:0
-        \r\n  at Tests.TestSuite+<TestSpawn>d__1.MoveNext () [0x0002b] in C:\\Users\\jakec\\OneDrive\\Desktop\\RWM2021-C00205926\\RWM2021-C00205926\\Assets\\Tests\\TestSuite.cs:19
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c]
-        in C:\\Users\\jakec\\Desktop\\RWM2021-C00205926\\RWM2021-C00205926\\Library\\PackageCache\\com.unity.test-framework@1.1.18\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:36 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -428,7 +406,7 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestSuite][suite]
+      parentUniqueId: BombTests.dll/[BombTests][BombTestSuite][suite]
     m_ResultText: "TestSpawn (0.052s)\n---\nSystem.ArgumentException : The Object
       you want to instantiate is null.\n---\nat UnityEngine.Object.CheckNullArgument
       (System.Object arg, System.String message) [0x00009] in <9674024ab0e74d27bbe9eaa30dab34d1>:0
@@ -446,7 +424,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 26fb391b
       m_LastClickedID: 456784678
-      m_ExpandedIDs: 133edb9c19782ad9e557abf74dad7d13aac44b398359db4158dfd67345dca17bffffff7f
+      m_ExpandedIDs: 133edb9c130e4ca719782ad9e557abf7a043f8114dad7d13aac44b398359db4158dfd67345dca17bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -645,23 +623,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6a74ffff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 46fbffff
+      m_ExpandedIDs: 62f7ffff74f7fffff0f7ffff4efaffffecfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: bomb(Clone)
-        m_OriginalName: bomb(Clone)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -32898
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -851,20 +829,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/BombComponent/Tests
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/BombComponent/Tests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jakec\OneDrive\Desktop\RWM2021-C00205926\RWM2021-C00205926
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72390000
-    m_LastClickedID: 14706
-    m_ExpandedIDs: 000000006a39000000ca9a3b
+    m_SelectedIDs: 62390000
+    m_LastClickedID: 14690
+    m_ExpandedIDs: 000000004c3900005639000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -892,7 +870,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a390000
+    m_ExpandedIDs: 000000004c390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -917,8 +895,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 3c76ffff
-    m_LastClickedInstanceID: -35268
+    m_SelectedInstanceIDs: 98390000
+    m_LastClickedInstanceID: 14744
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000d80b0000000000004e300000
     m_RenameOverlay:
@@ -936,7 +914,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
