@@ -229,4 +229,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   speed: 0
-  cur_drag: 0
+  cur_drag: 0.25

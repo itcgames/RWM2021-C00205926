@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BombTimer : MonoBehaviour
 {
-    float count = 3000.0f;
+    float count = 10.0f;
 
     private AudioSource audioSource;
     public AudioClip bombExplosion;
@@ -30,11 +30,28 @@ public class BombTimer : MonoBehaviour
 
         if (count <= 0.0f)
         {
-            AudioSource.PlayClipAtPoint(bombExplosion, transform.position);
-
-            bombSpawner.bombAlive = false;
-
-            Destroy(gameObject);
+            BombCountDown();
         }
+
+        if(Input.GetButtonDown("Bang"))
+        {
+            BombDet();
+        }
+    }
+
+    void BombCountDown()
+    {
+        AudioSource.PlayClipAtPoint(bombExplosion, transform.position);
+
+        bombSpawner.bombAlive = false;
+
+        Destroy(gameObject);
+    }
+
+    void BombDet()
+    {
+        bombSpawner.bombAlive = false;
+
+        Destroy(gameObject);
     }
 }

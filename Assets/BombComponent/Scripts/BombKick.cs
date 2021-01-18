@@ -24,7 +24,6 @@ public class BombKick : MonoBehaviour
     void FixedUpdate()
     {
         speed = r.velocity.magnitude;
-
     }
 
 
