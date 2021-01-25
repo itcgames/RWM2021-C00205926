@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine.Tilemaps;
 using UnityEngine;
 
+/// <summary>
+/// If script is placed on a player then it will spawn on the corrissponding player
+/// </summary>
+
 public class BombSpawnerTile : MonoBehaviour
 {
+    
     public Tilemap tm;
+    public GameObject[] unplantable;
     public GameObject bomb;
 
     // Update is called once per frame
@@ -20,7 +26,6 @@ public class BombSpawnerTile : MonoBehaviour
             Vector3 centreBomb = tm.GetCellCenterWorld(index);
 
             Instantiate(bomb, centreBomb, Quaternion.identity);
-
         }
     }
 }

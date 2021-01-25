@@ -18,7 +18,11 @@ public class BombKick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        BombUp();
+        if(Input.GetButtonDown("Kick"))
+        {
+            BombMove();
+        }
+
     }
 
     void FixedUpdate()
@@ -27,7 +31,7 @@ public class BombKick : MonoBehaviour
     }
 
 
-    void BombUp()
+    void BombMove()
     {
         r.AddForce(Vector2.up * thrust, ForceMode2D.Impulse);
 

@@ -10,7 +10,7 @@ public class BombTile : MonoBehaviour
     {
         countdown -= Time.deltaTime;
         
-        if(countdown <= 0)
+        if(countdown <= 0 || Input.GetButtonDown("Bang"))
         {
             FindObjectOfType<BreakableObject>().Boom(transform.position);
             Destroy(gameObject);
